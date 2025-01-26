@@ -1,0 +1,273 @@
+/* General styles */
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    color: #333;
+    text-align: center; /* Ensures text is center-aligned */
+
+  
+    /* Responsive design: Prevents content from touching edges */
+  
+  }
+  
+/* Navigation Bar - Sticky Header */
+header {
+    background-color: #a92457;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0; /* Makes the header stick to the top */
+    z-index: 1000; /* Ensures it stays above other elements */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+  /* Main content */
+  main {
+    
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #a92457;
+    margin-left: 4%;
+  }
+  
+  .quiz-section {
+    margin-bottom: 20px;
+  }
+  
+  .quiz-section label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  
+  .quiz-section select, .quiz-section input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+
+/* General wrapper for this question */
+.skin-conditions-section {
+    margin: 20px 0;
+    font-size: 16px;
+    }
+  
+  /* Ensure each checkbox option is stacked vertically */
+  .checkbox-group div {
+    display: block; /* Stack each checkbox vertically */
+    margin: 5px 0; /* Space between each checkbox */
+  }
+  
+  /* Style individual checkbox divs */
+  .checkbox-group input[type="checkbox"] {
+    margin-right: 8px; /* Space between checkbox and its label */
+  }
+  
+  /* Style the labels */
+  .checkbox-group label {
+    cursor: pointer;
+  }
+
+
+.shade-swatch {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.shade-swatch:hover {
+  transform: scale(1.1);
+}
+
+input[type="radio"]:checked + label {
+  border-color: #000;
+  transform: scale(1.2);
+}
+
+  
+  button {
+    background-color: #a92457;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+  }
+  
+  button:hover {
+    background-color: #1A252F;
+  }
+
+/* Footer */
+footer {
+    background-color: #a92457;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+#recommendations {
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+#recommendations h2 {
+  color: #333;
+}
+#recommendations ul {
+  list-style: none;
+  padding: 0;
+}
+#recommendations li {
+  margin: 5px 0;
+}
+
+
+
+
+
+
+
+label {
+  display: block;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 16%;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+
+
+
+
+select {
+  width: 80px; /* Adjust dropdown width */
+  padding: 10px;
+  margin: 5px 0;
+  text-align: left; /* Center the dropdown text */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  appearance: none; /* Removes default dropdown arrow styling */
+  background-color: #f8f8f8;
+  cursor: pointer;
+  max-width: 70%;
+}
+
+
+
+
+
+
+
+  #output {
+      margin-top: 20px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background-color: rgba(255, 217, 0, 0.344);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  #output h2 {
+      color: #a92457;
+      text-align: center;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+
+  #output p {
+      color: #555;
+      font-size: 16px;
+      line-height: 1.6;
+  }
+
+  #output h3 {
+      color: #a92457;
+      border-bottom: 2px solid #f0a500;
+      padding-bottom: 5px;
+      margin-top: 20px;
+      max-width: 20%;
+      margin-left: 40%;
+  }
+
+  ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;           /* Remove default padding */
+    margin: 0 auto;       /* Center the list container */
+    width: 100%;          /* Ensure it spans full width */
+    max-width: 600px;     /* Limit width for better readability */
+}
+ul li {
+    text-align: center;   /* Center align the content */
+    margin-bottom: 20px; /* Space between list items */
+}
+ul li strong {
+    display: block;       /* Treat <strong> as a block element */
+    margin-bottom: 10px;  /* Space below <strong> */
+}
+ul li span {
+    display: block;       /* Ensure text appears on a new line below <strong> */
+}
+
+
+   strong {
+      font-weight: bold;
+      color: #a92457;
+  }
+
+ 
+ 
+  footer {
+    background-color: #a92457;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+
